@@ -27,14 +27,14 @@
 
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './src/components/Navbar';
 import { BrowserRouter as Router, Routes, Route }
 	from 'react-router-dom';
-import Home from './pages';
-import About from './pages/about';
-import Blogs from './pages/blogs';
-import SignUp from './pages/signup';
-import Contact from './pages/contact';
+import Home from './src/pages';
+import About from './src/pages/about';
+import Blogs from './src/pages/blogs';
+import SignUp from './src/pages/signup';
+import Contact from './src/pages/contact';
 
 function App() {
 	return (
