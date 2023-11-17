@@ -1,3 +1,20 @@
+/* :root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --background-color: #b8bec3;
+  --text-color: #333333;
+} */
+
+:root {
+  --primary-color: #d4a373;
+  --secondary-color: #faedcd;
+  --accent-color: #fafae0;
+  --background-color: #ccd5ae;
+  --secondary-background-color: #e9edc9;
+  --text-color: #333333;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +52,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background-color: var(--background-color);
 }
