@@ -1,0 +1,34 @@
+#nav-wrapper {
+    background-color: var(--primary-color);
+    padding: 1%;
+    margin: 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 3px;
+    opacity: 95%;
+}
+
+#right-nav {
+    display: flex;
+    justify-content: right;
+}
+
+#left-nav{
+    display: flex;
+    justify-content: left;
+}
+
+.link.home-link {
+    padding-left: 0px;
+}
+.link {
+    margin: 0%;
+    padding: 4px;
+    padding-left: 25px;
+    color: var(--text-color);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}

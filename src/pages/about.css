@@ -1,0 +1,21 @@
+#about-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+#about {
+    color: var(--text-color);
+    height: 100vh;
+    border-radius: 10px;
+    background-color: var(--secondary-background-color);
+    opacity: 1;
+    width: 90%;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    opacity: 1;
+    font-weight: bold;
+}
