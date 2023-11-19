@@ -5,17 +5,34 @@
 }
 
 #about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     color: var(--text-color);
-    height: 100vh;
+    height: 100vh; /* not mobile friendly */
     border-radius: 10px;
     background-color: var(--secondary-background-color);
     opacity: 1;
     width: 90%;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 h1 {
     text-align: center;
     opacity: 1;
     font-weight: bold;
+}
+
+#intro-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    align-self: center;
+}
+
+.intro {
+    color: var(--text-color);
+    font-size: 120%;
 }

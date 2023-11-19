@@ -32,24 +32,24 @@ const Navbar = () => {
   return (
     <div id="nav-wrapper">
       <nav id="left-nav">
-        <NavLink to="/" activeStyle className="link home-link">
+        <NavLink to="/" className="link home-link">
           Tyler Methot
         </NavLink>
       </nav>
       <nav id="right-nav">
-        <NavLink to="/" activeStyle className="link">
+        <NavLink to="/" className="link">
           Home
         </NavLink>
-        <NavLink to="/about" activeStyle className="link">
+        <NavLink to="/about" className="link">
           About
         </NavLink>
-        <NavLink to="/contact" activeStyle className="link">
+        <NavLink to="/contact" className="link">
           Contact Me
         </NavLink>
-        <NavLink to="/blogs" activeStyle className="link">
+        <NavLink to="/blogs" className="link">
           Blogs
         </NavLink>
-        <NavLink to="/sign-up" activeStyle className="link">
+        <NavLink to="/sign-up"  className="link">
           Sign Up
         </NavLink>
       </nav>

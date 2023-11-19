@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^6.0.0",
+    "man": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fontawesome": "^1.7.1",
@@ -17,9 +18,12 @@
     "styled-components": "^6.1.1",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "@babel/plugin-transform-private-property-in-object": "^7.23.3"
+  },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "master -b Current-build -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -13,22 +13,42 @@
 #right-nav {
     display: flex;
     justify-content: right;
+    align-items: center;
 }
 
 #left-nav{
     display: flex;
     justify-content: left;
+    align-items: center;
 }
 
-.link.home-link {
-    padding-left: 0px;
-}
 .link {
     margin: 0%;
     padding: 4px;
     padding-left: 25px;
     color: var(--text-color);
-    font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     text-decoration: none;
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 4px var(--text-color);
+}
+
+.link.home-link {
+    padding-left: 0px;
+    font-weight: bolder;
+    font-size: 160%;
+    color: var(--accent-color);
+}
+
+.link:hover {
+    text-shadow: 3px 3px 5px var(--text-color);
+}
+
+.link:active {
+    color: var(--text-color);
+}
+
+.link.active:not(.home-link) {
+    text-decoration: underline;
+    font-size: 110%;
 }
