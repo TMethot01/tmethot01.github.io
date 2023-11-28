@@ -8,6 +8,7 @@
     position: sticky;
     top: 3px;
     opacity: 95%;
+    box-shadow:0px 0px 10px 1px var(--text-color);
 }
 
 #right-nav {
@@ -46,6 +47,7 @@
 
 .link:active {
     color: var(--text-color);
+    text-shadow: none;
 }
 
 .link.active:not(.home-link) {
