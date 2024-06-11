@@ -1,20 +1,86 @@
 #demo-wrapper {
     display: flex;
-    justify-content: center;
+
     padding: 1%;
 }
 
+#demo-nav-wrapper {
+    width: 25%;
+    border: none;
+}
+
+#demo-nav {
+    border: none;
+    justify-self: flex-start;
+    position: sticky;
+    top: 80px;
+    margin-left: -10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: var(--grey-7);
+    box-shadow:1px 2px 10px 0px var(--grey-1);
+    padding: 7px;
+}
+
+#demo-nav > h3 {
+    color: var(--blue-2);
+    margin-bottom: 0px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, var(--grey-1), var(--grey-1), var(--grey-1));
+}
+
+ul {
+    padding-left: 10px;
+}
+
+.main-li, .sub-li {
+    display: block;
+}
+
+.main-li {
+    margin-top: 10px;
+}
+
+.main-li > a {
+    color: var(--grey-1);
+    font-weight: normal;
+}
+
+.sub-li::before {
+    content: "- ";
+    color: var(--grey-3);
+}
+
+.sub-li > a {
+    color: var(--grey-3);
+    font-weight: normal;
+    font-size: small;
+}
+
+ul > li > a{
+    text-decoration: none;
+    font-weight: bold;
+    scroll-margin-top: 80px;
+}
+
+
 #demo {
-    color: var(--text-color);
     /*height: 100vh;  not mobile friendly */
-    border-radius: 0px;
-    background-color: var(--secondary-background-color);
+    border-radius: 5px;
+    background-color: var(--grey-7);
     opacity: 1;
-    width: 60%;
+    width: 100%;
+    align-self: center;
+    border: none;
     justify-content: flex-start;
-    box-shadow:1px 2px 10px 0px var(--text-color);
+    box-shadow:1px 2px 10px 0px var(--grey-1);
     line-height: 1.5;
     padding: 15px;
+    color: var(--blue-1)
 }
 
 #button-well-1 {
@@ -23,38 +89,296 @@
 
 }
 
-.button-1 {
-    background-color: var(--primary-color);
-    color: white;
+.button {
     border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     border: none;
-    box-shadow: 1px 1px 6px 1px var(--text-color);
-    font-size: 130%;
-    width: 120%;
-    height:120%;
+}
+
+.button-1 {
+    background-color: var(--blue-4);
+    color: var(--blue-7);
+    border: 2px solid transparent; 
+    box-shadow: 1px 1px 6px 0px var(--grey-1);
+}
+
+.button-1:hover, .button-1:focus {
+    background-color: var(--blue-3);
+}
+
+.button-1:active {
+    background-color: var(--blue-2);
 }
 
 .button-2 {
-    background-color: var(--secondary-background-color);
-    color: var(--primary-color);
-    border-radius: 9px;
-    border: none;
+    background-color: var(--grey-7);
+    color: var(--blue-4);
+    border: 2px solid var(--blue-4);
     box-shadow: 1px 1px 4px 1px var(--text-color);
-    font-size: 130%;
-    width: 120%;
-    height:120%;
 }
 
-.button-2:hover {
-    box-shadow: none;
+.button-2:hover, .button-2:focus {
+    background-color: var(--grey-6);
+}
+
+.button-2:active {
+    background-color: var(--grey-5);
 }
 
 .button-3 {
-    border: none;
-    background-color: var(--secondary-background-color);
+    background-color: inherit;
     text-decoration: underline;
-    color: var(--primary-color);
-    font-size: 130%;
-    width: 120%;
-    height:120%;
+    color: var(--blue-2);
+}
+
+.button-3:hover, .button-3:focus {
+    color: var(--blue-4)
+}
+
+.button-3:active {
+    color: var(--blue-5)
+}
+
+select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-appearance: none; /* Removes default styling on iOS */
+    -moz-appearance: none; /* Removes default styling on Firefox */
+    appearance: none;
+  }
+
+.select-style {
+    padding: 0.5rem 1rem; /* Same padding as buttons */
+    position: relative;
+    font-weight: bold; /* Same font weight as buttons */
+    background-color: var(--grey-7); /* Same background color as .button-1 */
+    color: var(--blue-4); /* Same text color as .button-1 */
+    border: 2px solid var(--blue-4);
+    border-radius: 5px; /* Same border-radius as buttons */
+    box-shadow: 1px 1px 6px 0px var(--grey-1); /* Same box-shadow as .button-1 */
+    -webkit-appearance: none; /* Removes default styling on iOS */
+    -moz-appearance: none; /* Removes default styling on Firefox */
+    appearance: none; /* Standard way to remove default browser styling */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    transition: background-color 0.3s ease; /* Transition for smooth color change */
+}
+  
+  /* Hover style for select */
+.select-style:hover {
+    background-color: var(--grey-6); /* Same hover effect as .button-1 */
+  }
+  
+  /* Focus style for select, similar to hover */
+.select-style:focus {
+    background-color: var(--grey-6); /* Same focus color as hover */
+  }
+  
+  /* Add a pseudo-element for the arrow */
+.select-style::after {
+    content: "";
+    z-index: 0;
+    background-color: blue;
+    position: absolute;
+    right: 10px; /* Or however far from the right edge you want the arrow to be */
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid transparent; /* Creates the sides of the arrow */
+    border-top-color: var(--blue-4); /* The color of the arrow */
+    border-bottom: 0; /* Removes the bottom border to complete the arrow shape */
+    pointer-events: none; /* Ensures clicks pass through to the select element below */
+}
+  
+  /* Remove the pseudo-element arrow when the select is open */
+.select-style:focus::after,
+.select-style:active::after {
+    content: none;
+}
+
+
+.input-number {
+    padding: 0.5rem 1rem; /* Same padding as your buttons */
+    font-size: 1rem; /* Match font size to your buttons */
+    border: 2px solid var(--blue-4); /* Same border color as your secondary button */
+    border-radius: 5px; /* Same border-radius as your buttons */
+    background-color: var(--grey-7); /* If your buttons have a background color, match it here */
+    color: var(--blue-4); /* Match the text color to your buttons */
+    margin: 0; /* Adjust margin as needed */
+    -webkit-appearance: textfield; /* Removes default styling on iOS */
+    -moz-appearance: textfield; /* Removes default styling on Firefox */
+    appearance: textfield; /* Removes default browser styling */
+}
+
+.input-number:focus {
+    outline: none; /* Removes default focus outline */
+    border-color: var(--blue-3); /* Lighter border color when input is focused */
+    box-shadow: 0 0 0 2px var(--blue-2); /* Optional: adds a 'glow' effect on focus */
+}
+
+.input-number::-webkit-inner-spin-button,
+    .input-number::-webkit-outer-spin-button {
+    -webkit-appearance: auto;
+    cursor: pointer;
+}
+
+.display-element {
+    background-color: var(--cool-grey-6);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.color-well {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px;
+}
+
+.color-swatch {
+    height: 30px;
+    width: 60px;
+    box-shadow: 1px 1px 3px 1px black;
+    border-radius: 3px;
+}
+
+#blue-1 {
+    background-color: var(--blue-1);
+}
+
+#blue-2 {
+    background-color: var(--blue-2);
+}
+
+#blue-3 {
+    background-color: var(--blue-3);
+}
+
+#blue-4 {
+    background-color: var(--blue-4);
+}
+
+#blue-5 {
+    background-color: var(--blue-5);
+}
+
+#blue-6 {
+    background-color: var(--blue-6);
+}
+
+#blue-7 {
+    background-color: var(--blue-7);
+}
+
+#grey-1 {
+    background-color: var(--grey-1);
+}
+
+#grey-2 {
+    background-color: var(--grey-2);
+}
+
+#grey-3 {
+    background-color: var(--grey-3);
+}
+
+#grey-4 {
+    background-color: var(--grey-4);
+}
+
+#grey-5 {
+    background-color: var(--grey-5);
+}
+
+#grey-6 {
+    background-color: var(--grey-6);
+}
+
+#grey-7 {
+    background-color: var(--grey-7);
+}
+
+#cool-grey-1 {
+    background-color: var(--cool-grey-1);
+}
+
+#cool-grey-2 {
+    background-color: var(--cool-grey-2);
+}
+
+#cool-grey-3 {
+    background-color: var(--cool-grey-3);
+}
+
+#cool-grey-4 {
+    background-color: var(--cool-grey-4);
+}
+
+#cool-grey-5 {
+    background-color: var(--cool-grey-5);
+}
+
+#cool-grey-6 {
+    background-color: var(--cool-grey-6);
+}
+
+#cool-grey-7 {
+    background-color: var(--cool-grey-7);
+}
+
+#warm-grey-1 {
+    background-color: var(--warm-grey-1);
+}
+
+#warm-grey-2 {
+    background-color: var(--warm-grey-2);
+}
+
+#warm-grey-3 {
+    background-color: var(--warm-grey-3);
+}
+
+#warm-grey-4 {
+    background-color: var(--warm-grey-4);
+}
+
+#warm-grey-5 {
+    background-color: var(--warm-grey-5);
+}
+
+#warm-grey-6 {
+    background-color: var(--warm-grey-6);
+}
+
+#warm-grey-7 {
+    background-color: var(--warm-grey-7);
+}
+
+.color-well-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px;
+    margin-top: -40px;
+}
+
+.color-swatch-label {
+    height: 30px;
+    width: 60px;
+    border-radius: 6px;
+    justify-self: center;
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: -15px;
+    scroll-margin-top: 80px;
+}
+
+h2 {
+    scroll-margin-top: 80px;
 }

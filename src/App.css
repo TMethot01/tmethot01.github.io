@@ -13,6 +13,34 @@
   --background-color: #ccd5ae;
   --secondary-background-color: #e9edc9;
   --text-color: #333333;
+  --blue-1: hsl(215, 90%, 10%);
+  --blue-2: hsl(215, 75%, 25%);
+  --blue-3: hsl(215, 55%, 35%);
+  --blue-4: hsl(215, 50%, 50%);
+  --blue-5: hsl(215, 55%, 65%);
+  --blue-6: hsl(215, 75%, 80%);
+  --blue-7: hsl(215, 90%, 90%);
+  --grey-1: hsl(0, 0%, 15%);
+  --grey-2: hsl(0, 0%, 25%);
+  --grey-3: hsl(0, 0%, 45%);
+  --grey-4: hsl(0, 0%, 65%);
+  --grey-5: hsl(0, 0%, 75%);
+  --grey-6: hsl(0, 0%, 85%);
+  --grey-7: hsl(0, 0%, 93%);
+  --cool-grey-1: hsl(210, 20%, 15%);
+  --cool-grey-2: hsl(210, 15%, 25%);
+  --cool-grey-3: hsl(210, 10%, 45%);
+  --cool-grey-4: hsl(210, 10%, 65%);
+  --cool-grey-5: hsl(210, 10%, 75%);
+  --cool-grey-6: hsl(210, 15%, 85%);
+  --cool-grey-7: hsl(210, 20%, 93%);
+  --warm-grey-1: hsl(40, 19%, 15%);
+  --warm-grey-2: hsl(40, 15%, 25%);
+  --warm-grey-3: hsl(40, 10%, 45%);
+  --warm-grey-4: hsl(40, 10%, 65%);
+  --warm-grey-5: hsl(40, 10%, 75%);
+  --warm-grey-6: hsl(40, 15%, 85%);
+  --warm-grey-7: hsl(40, 20%, 93%);
 }
 
 .App {
@@ -55,6 +83,11 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--grey-6);
+  background-image: url('C:/Users/18193/GithubRepo/tmethot01.github.io/public/background-image-4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   font-family: Helvetica, Arial, sans-serif;
 }

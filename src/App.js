@@ -33,7 +33,7 @@ import { BrowserRouter as Router, Routes, Route }
 import Home from './pages';
 import About from './pages/about';
 import Demo from './pages/demo';
-import SignUp from './pages/signup';
+import SignUp from './pages/sorting';
 import Contact from './pages/contact';
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
 				<Route path='/about' element={<About />} />
 				<Route path='/contact' element={<Contact />} />
 				<Route path='/demo' element={<Demo />} />
-				<Route path='/sign-up' element={<SignUp />} />
+				<Route path='/sorting' element={<SignUp />} />
 			</Routes>
 		</Router>
 	);

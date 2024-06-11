@@ -20,8 +20,8 @@ import "./navbar.css";
 //                     <NavLink to="/blogs" activeStyle>
 //                         Blogs
 //                     </NavLink>
-//                     <NavLink to="/sign-up" activeStyle>
-//                         Sign Up
+//                     <NavLink to="/sorting" activeStyle>
+//                         Sorting
 //                     </NavLink>
 //                 </NavMenu>
 //             </Nav>
@@ -49,8 +49,8 @@ const Navbar = () => {
         <NavLink to="/demo" className="link">
           Demo Library
         </NavLink>
-        <NavLink to="/sign-up"  className="link">
-          Sign Up
+        <NavLink to="/sorting"  className="link">
+          Sorting
         </NavLink>
       </nav>
     </div>
